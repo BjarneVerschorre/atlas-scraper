@@ -43,8 +43,7 @@ def get_existent_images() -> list[str]:
 
 async def main():
 
-    url = input("https://www.memeatlas.com/")
-    url = url if url.startswith("https://www.memeatlas.com/") else f"https://www.memeatlas.com/{url}"
+    url = input("memeatlas.com url: ")
 
     soup = get_page(url)
     images = get_images(soup)
